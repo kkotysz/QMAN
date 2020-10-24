@@ -1,0 +1,1615 @@
+  1  Image  B             100   2
+  4  Image  V             100   2
+  2  Image  I              60   2
+  1  Bias   I               1   2
+
+% die Dunkelsequenz fur flats
+  8  Dark   I              12   2
+  8  Dark   I              22   2
+
+% NGC637
+  1  Bias   B               1   16
+  2  Image  B             100   16
+  3  Image  V              80   16
+  2  Image  I              60   16
+
+
+
+% KIC10661783
+  1  Bias   B               1   16
+  2  Image  B              40   16
+  2  Image  V              25   16
+  2  Image  R              15   16
+  2  Image  I              15   16
+
+% Darki 10,15,20
+  1  Bias   I               1   2
+  8  Dark   I              20   2
+  1  Bias   I               1   2
+  8  Dark   I              15   2
+  1  Bias   I               1   2
+  8  Dark   I              10   2
+
+
+% KIC10661783 - mode 2, good queue
+  1  Bias   B               1   2
+  2  Image  B              15   2
+  2  Image  V              10   2
+  2  Image  R              10   2
+  2  Image  I              10   2
+  2  Image  B              15   2
+  2  Image  V              10   2
+  2  Image  R              10   2
+  2  Image  I              10   2
+
+
+% Darki
+  1  Bias   I               1   2
+  8  Dark   I              20   2
+  1  Bias   I               1   2
+  8  Dark   I              15   2
+  1  Bias   I               1   2
+  8  Dark   I              10   2
+
+% NGC637
+  1  Bias   B               1   16
+  2  Image  B             100   16
+  3  Image  V              80   16
+  2  Image  I              60   16
+
+
+% M3, M92, M13 [this is correct sequence! use it please]
+  5  Image  V             100  2
+  2  Image  I             100  2 
+  1  Bias   I               1  2
+
+% Darki 10,15,30
+  1  Bias   B               1   2
+  8  Dark   B              30   2
+  1  Bias   B               1   2
+  8  Dark   B              15   2
+  1  Bias   B               1   2
+  8  Dark   B              10   2
+
+% die Dunkelsequenz fur flats
+  8  Dark   I              10   2
+  8  Dark   I              22   2
+  8  Dark   I              33   2
+
+% Gaia16aye
+  1  Bias   V               1  16
+  2  Image  V             120  16
+  2  Image  R             100  16
+  2  Image  I             100  16
+
+% V1490_Cyg
+  1  Bias   B               1   16
+  3  Image  B             120   16
+  3  Image  V             120   16
+  1  Bias   R               1   16
+  3  Image  R             120   16
+  3  Image  I             120   16
+
+% KIC8462852 (WTF)
+  1  Bias   B               1   16
+  3  Image  B              90   16
+  3  Image  V              60   16
+  1  Bias   R               1   16
+  3  Image  R              40   16
+  3  Image  I              40   16
+
+% KIC9832227
+  1  Bias   V               1  16
+  2  Image  V              60  16
+  2  Image  I              60  16
+
+% die Dunkelsequenz fur flats
+  8  Dark   I              15   2
+  8  Dark   I              50   2
+
+% die Dunkelsequenz fur object
+  8  Dark   B             100   16
+  8  Dark   B              80   16
+  8  Dark   B              60   16
+  1  Bias   B               1   16
+
+
+% HAT-P-2b
+  1  Bias   R               1  16
+ 30  Image  R               7  16
+  1  Bias   V               1  16
+  2  Image  V             100  16
+  3  Image  R             100  16
+  3  Image  I             100  16
+
+% BH_Oph
+  1  Bias   B               1  16
+  3  Image  B              60  16
+  3  Image  V              40  16
+  3  Image  R              30  16
+  3  Image  I              30  16
+
+% BL_Her
+  1  Bias   B               1  16
+  2  Image  B              60  16
+  2  Image  V              30  16
+  2  Image  R              20  16
+  2  Image  I              15  16
+
+% TX_Her
+  1  Bias   B               1  16
+  3  Image  B              25  16
+  3  Image  V              15  16
+  3  Image  R              10  16
+  3  Image  I              10  16
+
+% AD_Boo
+  1  Bias   B               1  16
+  3  Image  B              50  16
+  3  Image  V              30  16
+  3  Image  R              25  16
+  3  Image  I              25  16
+
+% UW_LMi
+  1  Bias   B               1  16
+  3  Image  B              25  16
+  3  Image  V              15  16
+  3  Image  R               6  16
+  3  Image  I               6  16
+
+% DI_Cam
+  1  Bias   B               1  16
+  3  Image  B              15  16
+  3  Image  V              10  16
+  3  Image  R              10  16
+  3  Image  I              10  16
+
+% V948_Her
+  1  Bias   B               1  16
+  3  Image  B              50  16
+  3  Image  V              30  16
+  3  Image  R              25  16
+  3  Image  I              25  16
+
+% Stock8 - tryb 16
+  1  Bias   B               1  16
+  1  Image  B             120  16
+  1  Image  V             120  16
+  1  Image  V              60  16
+  1  Image  R              90  16
+  1  Image  I              90  16
+  1  Image  I              30  16
+ 10  Image  I              10  16
+
+% Darki
+  8  Dark   B              35   2
+  8  Dark   B              30   2
+  8  Dark   B              22   2
+  8  Dark   B              12   2
+
+% WASP-12b
+  1  Bias   None            1  16
+ 15  Image  None           20  16
+
+% WZ_Oph - low above horizon
+  1  Bias   B               1  16
+  3  Image  B              40  16
+  3  Image  V              30  16
+  3  Image  R              30  16
+  3  Image  I              30  16
+
+% WZ_Oph - high above horizon
+  1  Bias   B               1  16
+  3  Image  B              30  16
+  3  Image  V              20  16
+  3  Image  R              15  16
+  3  Image  I              15  16
+
+% UW_LMi
+  1  Bias   B               1  16
+  2  Image  B              30  16
+  2  Image  V              15  16
+  2  Image  I              10  16
+
+% UW_LMi_2
+  1  Bias   B               1  16
+  2  Image  B             120  16
+  3  Image  V             120  16
+  3  Image  V              60  16
+  2  Image  R              90  16
+  4  Image  I              90  16
+  5  Image  I              30  16
+
+% Kojimaevent
+  1  Bias   B               1  16
+  1  Image  B              60  16
+  1  Image  V              40  16
+  1  Image  I              30  16
+
+% GD246,NGC7380,NGC7790
+  1  Bias   B               1  16
+  1  Image  B             100  16
+  1  Image  V              60  16
+  1  Image  R              60  16
+  1  Image  I              60  16
+  1  Image  B             100  16
+  1  Image  V              60  16
+  1  Image  R              60  16
+  1  Image  I              60  16
+
+% WASP-33b
+  1  Bias   V               1  16
+ 30  Image  V              10  16
+
+% NGC7790
+  1  Bias   B               1  16
+  1  Image  B             150  16
+  2  Image  V             120  16
+  1  Image  V              40  16
+  2  Image  R             100  16
+  1  Image  R              60  16
+  2  Image  I              80  16
+  1  Image  I              30  16
+
+% KELT-16b
+  1  Bias   R               1  16
+ 10  Image  R              50  16
+
+% KIC9832227
+  1  Bias   V               1  16
+  1  Image  V              60  16
+  1  Image  I              60  16
+
+% NGC6910
+  1  Bias   B               1  16
+  1  Image  B              80  16
+  2  Image  V              40  16
+  2  Image  R              30  16
+  2  Image  I              20  16
+
+% NGC6823
+  1  Bias   V               1  16
+  2  Image  V             100  16
+  3  Image  R             100  16
+  3  Image  I             100  16
+
+
+% Gaia16aye
+  1  Bias   V               1  16
+  2  Image  V             120  16
+  2  Image  R             100  16
+  2  Image  I             100  16
+
+% Gaia17bts
+  1  Bias   B               1  16
+  1  Image  B             120  16
+  1  Image  V             120  16
+  1  Image  R             120  16
+  1  Image  I             120  16
+
+% BL_Her
+  1  Bias   B               1  16
+  2  Image  B              60  16
+  2  Image  V              30  16
+  2  Image  R              20  16
+  3  Image  I              15  16
+
+% V743_Cep
+  1  Bias   B               1  16
+  2  Image  B              60  16
+  2  Image  V              40  16
+  2  Image  R              30  16
+  2  Image  I              20  16
+
+% Gaia17bsh
+  1  Bias   B               1  16
+  1  Image  B             120  16
+  1  Image  V             120  16
+  1  Image  R             120  16
+  1  Image  I             120  16
+  1  Image  B             120  16
+  1  Image  V             120  16
+  1  Image  R             120  16
+  1  Image  I             120  16
+
+% NGC6946
+  1  Bias   B               1  16
+  1  Image  B             100  16
+  1  Image  V             100  16
+  1  Image  R             100  16
+  1  Image  I             100  16
+  1  Image  B             100  16
+  1  Image  V             100  16
+  1  Image  R             100  16
+  1  Image  I             100  16
+  1  Image  B             100  16
+  1  Image  V             100  16
+  1  Image  R             100  16
+  1  Image  I             100  16
+
+% Dark-600
+  1  Dark  B             600  16
+  1  Bias  B               1  16
+
+% Stock8 - tryb 16
+  1  Bias   B               1  16
+  1  Image  B             120  16
+  1  Image  V             120  16
+  1  Image  V              60  16
+  1  Image  R              90  16
+  1  Image  I              90  16
+  1  Image  I              30  16
+
+% NGC1624
+  1  Bias   V               1  16
+  1  Image  V             120  16
+  2  Image  R             120  16
+  1  Bias   I               1  16
+  3  Image  I             120  16
+
+% NGC7380
+  1  Bias   B               1  16
+  1  Image  B             120  16 
+  1  Image  B              40  16
+  1  Image  V             120  16
+  1  Image  V              30  16
+  1  Image  R             100  16
+  1  Image  R              30  16
+  1  Image  I              90  16
+  1  Image  I              20  16
+
+% Stock8 - tryb 16
+  1  Bias   B               1  16
+  1  Image  B             120  16
+  1  Image  V             120  16
+  1  Image  R              90  16
+  1  Image  I              90  16
+  1  Image  I              30  16
+
+% Stock8 - tryb 16 - Halpha
+  1  Bias   B               1  16
+  3  Image  B             120  16 
+  3  Image  V             100  16 
+  3  Image  R             100  16 
+  3  Image  I             100  16 
+  1  Bias   I               1  16
+  2  Image  Ha wide       100  16
+  2  Image  Ha narrow     120  16
+  2  Image  Ha wide       100  16
+  2  Image  Ha narrow     120  16
+  2  Image  Ha wide       100  16
+  2  Image  Ha narrow     120  16
+
+% OpenClusters - tryb 16 - Halpha
+  1  Bias   Ha wide         1  16
+  1  Image  Ha wide        60  16
+  2  Image  Ha narrow     150  16
+  1  Image  Ha wide        60  16
+  2  Image  Ha narrow     150  16
+  1  Bias   Ha wide         1  16
+  1  Image  Ha wide        60  16
+  1  Bias   Ha wide         1  16
+  1  Image  Ha wide        30  16
+  1  Image  Ha narrow     150  16
+  1  Image  Ha wide        30  16
+  1  Bias   Ha wide         1  16
+  1  Bias   U               1  16
+  5  Image  U             120  16
+  1  Bias   U               1  16
+  3  Image  B              30  16
+  2  Image  B             120  16
+  3  Image  V              20  16
+  2  Image  V             100  16
+  3  Image  I              20  16
+  2  Image  I             100  16
+  1  Bias   I               1  16
+
+% Dark600 - tryb 16
+  1  Bias   B               1  16
+  1  Dark   B             600  16
+
+% Dark600 - tryb 2
+  1  Bias   B               1  2 
+  1  Dark   B             600  2
+
+% Halpha Survey
+  1  Bias   Ha wide         1  16
+  1  Image  Ha wide       480  16
+  1  Bias   Ha wide         1  16
+  1  Image  Ha narrow    2400  16
+  1  Image  Ha wide       480  16
+  1  Bias   Ha wide         1  16
+  1  Image  Ha narrow    2400  16
+  1  Image  Ha wide       480  16
+  1  Bias   Ha wide         1  16
+  1  Image  Ha narrow    2400  16
+  1  Image  Ha wide       480  16
+  1  Bias   Ha wide         1  16
+
+% Halpha Survey for Open Clusters (long)
+  1  Image  Ha wide        50  16
+  1  Image  Ha narrow     200  16
+  1  Image  Ha wide        50  16
+  1  Image  Ha narrow     200  16
+  1  Image  Ha wide        50  16
+  1  Image  Ha narrow     200  16
+  1  Image  Ha wide        50  16
+  1  Bias   Ha wide         1  16
+  1  Bias   B               1  2
+  3  Image  B              20  2
+  1  Image  B             200  2
+  1  Image  B             600  2
+  3  Image  V              20  2
+  1  Image  V             200  2
+  1  Image  V             600  2
+  3  Image  I              20  2
+  1  Image  I             200  2
+  1  Image  I             600  2
+  1  Bias   I               1  2
+
+% Halpha Survey for Open Clusters (short)
+  1  Bias   B               1  16
+  3  Image  B              40  16
+  3  Image  B             120  16
+  3  Image  V              30  16
+  3  Image  V              90  16
+  1  Bias   V               1  16
+  3  Image  R              30  16
+  3  Image  R              90  16
+  1  Bias   R               1  16 
+  3  Image  I              20  16
+  3  Image  I              60  16
+  1  Bias   I               1  16
+  1  Image  Ha wide        90  16
+  1  Image  Ha narrow     150  16
+  1  Image  Ha wide        90  16
+  1  Image  Ha narrow     150  16
+  1  Image  Ha wide        90  16
+  1  Image  Ha narrow     150  16
+  1  Image  Ha wide        90  16
+  1  Image  Ha narrow     150  16
+  1  Image  Ha wide        90  16
+  1  Bias   Ha wide         1  16
+
+
+
+% NGC7380
+  1  Bias   B               1  16
+  1  Image  B             120  16 
+  1  Image  B              40  16
+  1  Image  V             120  16
+  1  Image  V              30  16
+  1  Image  R             100  16
+  1  Image  R              30  16
+  1  Image  I              90  16
+  1  Image  I              20  16
+
+% NGC7380 (2)
+  1  Bias   B               1  16
+  3  Image  B             100  16 
+  3  Image  V             100  16 
+  3  Image  R             100  16 
+  3  Image  I             100  16 
+  1  Bias   I               1  16
+
+% NGC7380 (Halpha)
+  1  Bias   Ha wide         1  16
+  1  Image  Ha wide       120  16
+  3  Image  Ha narrow     150  16
+  1  Image  Ha wide       120  16
+
+% V743_Cep
+  1  Bias   B               1  16
+  2  Image  B              60  16
+  2  Image  V              40  16
+  2  Image  I              30  16
+
+% GaiaV14ahj (~25 min)
+  1  Bias   B               1  16
+  3  Image  B             120  16
+  3  Image  V              90  16
+  1  Bias   R               1  16
+  3  Image  R              90  16
+  3  Image  I              60  16
+
+% NGC7654 (~15 min)
+  1  Bias   B               1  16
+  3  Image  B              60  16
+  3  Image  V              60  16
+  1  Bias   R               1  16
+  3  Image  R              40  16
+  3  Image  I              40  16
+
+% Berkeley59
+  1  Bias   B               1  16
+  3  Image  B             120  16
+  3  Image  V             120  16
+  3  Image  R              90  16
+  3  Image  I              90  16
+
+% V821_Cas
+  3  Image  B              15  2
+  3  Image  U              10  2
+  3  Image  B              10  2
+  1  Bias   U               1  2
+
+% DI_Cam (tryb 2)
+  1  Bias   B               1   2
+  3  Image  B              15   2
+  3  Image  V              10   2
+  3  Image  R              10   2
+  3  Image  I              10   2
+
+% Open Clusters - tryb 16 - long+short
+  1  Bias   B               1  16
+  3  Image  B              40  16
+  3  Image  B             120  16
+  3  Image  V              30  16
+  3  Image  V              90  16
+  1  Bias   V               1  16
+  3  Image  R              30  16
+  3  Image  R              90  16
+  1  Bias   R               1  16 
+  3  Image  I              20  16
+  3  Image  I              60  16
+  1  Bias   I               1  16
+
+% HS2231
+  1  Bias   B               1   2
+  1  Image  B             100   2
+  1  Image  V              60   2
+  1  Image  I              60   2
+  1  Image  B             100   2
+  1  Image  V              60   2
+  1  Image  I              60   2
+  1  Image  B             100   2
+  1  Image  V              60   2
+  1  Image  I              60   2
+
+% Gaia15aff
+  1  Bias   R               1  16
+  3  Image  R             150  16
+  1  Bias   R               1  16
+  3  Image  I             120  16
+
+% GaiaV14ahj
+  1  Bias   B               1  2
+  3  Image  B             100  2
+  3  Image  V             100  2
+  3  Image  R             100  2
+  3  Image  I             100  2
+
+% GaiaV14ahj
+  1  Bias   B               1  2
+  3  Image  B             120  2
+  3  Image  V             120  2
+  3  Image  R             120  2
+  3  Image  I             120  2
+
+% Gaia16ajq
+  1  Bias   B               1  16
+  3  Image  B             120  16
+  3  Image  V             120  16
+  3  Image  R             120  16
+  3  Image  I             120  16
+
+% Gaia16arz
+  1  Bias   B               1  16
+  3  Image  B             120  16
+  3  Image  V             120  16
+  3  Image  R             120  16
+  3  Image  I             120  16
+
+% Gaia16asm
+  1  Bias   B               1  16
+  3  Image  B             100  16
+  3  Image  V             100  16
+  3  Image  R             100  16
+  3  Image  I             100  16
+
+% Stock8
+  1  Bias   B               1  2
+  1  Image  B             120  2
+  1  Image  V              90  2
+  1  Image  V              30  2
+  1  Image  I              90  2
+  1  Image  I              30  2
+
+% Stock8 - tryb 16
+  1  Bias   B               1  16
+  1  Image  B             120  16
+  1  Image  V              90  16
+  1  Image  R              60  16
+  1  Image  I              40  16
+
+% AU Mon
+  1  Bias   B               1  2
+  3  Image  B              40  2
+  3  Image  V              20  2
+  3  Image  R              20  2
+  3  Image  I              20  2
+  1  Bias   I               1  2
+  3  Image  B              40  2
+  3  Image  V              20  2
+  3  Image  R              20  2
+  3  Image  I              20  2
+  1  Bias   I               1  2
+
+% SN2014J
+  1  Bias   B               1  2
+  2  Image  B             120  2
+  2  Image  V             120  2
+  2  Image  R             120  2
+  2  Image  I             120  2
+  1  Bias   I               1  2
+  1  Bias   I               1  16
+  1  Image  Ha wide       120  16
+  1  Image  Ha narrow     150  16
+  1  Image  Ha wide       120  16
+  1  Image  Ha wide        30  16
+  1  Image  Ha narrow      60  16
+  1  Image  Ha wide        30  16
+  1  Bias   Ha wide         1  16
+
+% V821_Cas
+  1  Bias   B               1  2
+  3  Image  B              10  2
+  3  Image  V              10  2
+  3  Image  I              10  2
+
+% NGC6871
+  1  Bias   B               1  2
+  1  Image  B              80  2
+  1  Image  V              80  2
+  1  Image  I              80  2
+  1  Image  B              80  2
+  1  Image  V              80  2
+  1  Image  I              80  2
+  3  Image  B              10  2
+  3  Image  V              10  2
+  3  Image  I              10  2
+
+% EE Cep 2014 campaign
+  1  Bias   B               1  2
+  3  Image  B             100  2
+  3  Image  V              60  2
+  3  Image  R              30  2
+  3  Image  I              30  2
+  1  Image  Ha wide       100  2
+  1  Image  Ha narrow     120  2
+  1  Image  Ha wide       100  2
+  1  Bias   Ha wide         1  2
+
+
+
+% H-alpha program
+  1  Bias   Ha wide         1  16
+  1  Image  Ha wide       500  16
+  1  Image  Ha narrow    3000  16
+  1  Image  Ha wide       500  16
+  1  Bias   Ha wide         1  16
+  1  Image  Ha wide        50  16
+  1  Image  Ha narrow     200  16
+  1  Image  Ha wide        50  16
+  1  Image  Ha narrow     200  16
+  1  Image  Ha wide        50  16
+  1  Image  Ha narrow     200  16
+  1  Image  Ha wide        50  16
+  1  Bias   Ha wide         1  16
+  1  Bias   B               1  2
+  3  Image  B              20  2
+  1  Image  B             200  2
+  1  Image  B             600  2
+  3  Image  V              20  2
+  1  Image  V             200  2
+  1  Image  V             600  2
+  3  Image  I              20  2
+  1  Image  I             200  2
+  1  Image  I             600  2
+  1  Bias   I               1  2
+
+% 2MASSJ13211837
+  1  Bias   B               1  2
+  1  Image  B             220  2
+  1  Image  V             220  2
+  1  Image  I             150  2
+  1  Image  B             220  2
+  1  Image  V             220  2
+  1  Image  I             150  2
+
+% GSC 3004
+  1  Bias   B               1  2
+  1  Image  B             200  2
+  1  Image  V             150  2
+  1  Image  I             120  2
+  1  Image  B             200  2
+  1  Image  V             150  2
+  1  Image  I             120  2
+  1  Image  B             200  2
+  1  Image  V             150  2
+  1  Image  I             120  2
+  1  Image  B             200  2
+  1  Image  V             150  2
+  1  Image  I             120  2
+
+% GSC 4556
+  1  Bias   B               1  2
+  1  Image  B             120  2
+  1  Image  V             100  2
+  1  Image  I              80  2
+  1  Image  B             120  2
+  1  Image  V             100  2
+  1  Image  I              80  2
+  1  Image  B             120  2
+  1  Image  V             100  2
+  1  Image  I              80  2
+  1  Image  B             120  2
+  1  Image  V             100  2
+  1  Image  I              80  2
+
+% GSC 2977
+  1  Bias   B               1  2
+  1  Image  B             120  2
+  1  Image  V              60  2
+  1  Image  I              40  2
+  1  Image  B             120  2
+  1  Image  V              60  2
+  1  Image  I              40  2
+  1  Image  B             120  2
+  1  Image  V              60  2
+  1  Image  I              40  2
+  1  Image  B             120  2
+  1  Image  V              60  2
+  1  Image  I              40  2
+
+% GSC 4552
+  1  Bias   B               1  2
+  1  Image  B             120  2
+  1  Image  V              60  2
+  1  Image  I              40  2
+  1  Image  B             120  2
+  1  Image  V              60  2
+  1  Image  I              40  2
+  1  Image  B             120  2
+  1  Image  V              60  2
+  1  Image  I              40  2
+  1  Image  B             120  2
+  1  Image  V              60  2
+  1  Image  I              40  2
+
+% BO Lyn
+  1  Bias   B               1  2
+  1  Image  B             120  2
+  1  Image  V              60  2
+  1  Image  I              40  2
+  1  Image  B             120  2
+  1  Image  V              60  2
+  1  Image  I              40  2
+  1  Image  B             120  2
+  1  Image  V              60  2
+  1  Image  I              40  2
+  1  Image  B             120  2
+  1  Image  V              60  2
+  1  Image  I              40  2
+
+% NGC637
+  1  Bias   B               1  2
+  1  Image  B             150  2
+  7  Image  V             100  2
+  1  Image  I              60  2
+  1  Image  B             150  2
+  7  Image  V             100  2
+  1  Image  I              60  2
+
+
+% NGC637_2
+  1  Bias   B               1  2
+  2  Image  B             100  2
+  3  Image  V              80  2
+  2  Image  I              60  2
+
+% NGC6823_2
+  1  Bias   V               1  2
+  1  Image  V             120  2
+  7  Image  I             120  2
+
+% NGC6823_3
+  1  Bias   V               1  2
+  1  Image  V             150  2
+  7  Image  I             150  2
+
+% NGC6823_4
+  1  Image  V             100  2
+  5  Image  I             100  2
+  1  Bias   I               1  2
+
+
+% NGC 7510
+  1  Image  B             120  2
+  1  Image  V             100  2
+  2  Image  I              80  2
+  1  Bias   I               1  2
+
+% NGC2129
+  1  Image  B             100  2
+  1  Image  V              60  2
+  1  Image  I              40  2
+  1  Image  B             100  2
+  2  Image  V              60  2
+  2  Image  I              40  2 
+  1  Bias   I               1  2
+
+% NGC6811
+  1  Image  B             100  2
+  1  Image  V             100  2
+  1  Image  I             100  2 
+  1  Image  B             100  2
+  1  Image  V             100  2
+  1  Image  I             100  2 
+  1  Bias   I               1  2
+
+% NGC457
+  1  Image  B             100  2
+  5  Image  V              60  2
+  1  Image  I              60  2
+  1  Bias   I               1  2
+  1  Image  B             100  2
+  5  Image  V              60  2
+  1  Image  I              60  2 
+
+% IC4996
+  1  Image  B              80  2
+  2  Image  V              60  2
+  1  Image  R              30  2
+  1  Image  I              30  2
+  1  Bias   I               1  2
+
+% Trumpler_1
+  1  Image  B             100  2
+  4  Image  V              60  2
+  1  Image  I              60  2
+  1  Bias   I               1  2
+
+% M103_1
+  1  Bias   B               1  2
+  1  Image  B              30  2
+  2  Image  V              20  2
+  3  Image  I              10  2
+
+% M103_2
+  1  Bias   B               1  2
+  2  Image  B              30  2
+  3  Image  V              20  2
+  4  Image  I              10  2
+  2  Image  B              30  2
+  3  Image  V              20  2
+  4  Image  I              10  2
+
+% M103_3
+  1  Bias   B               1  2
+  1  Image  B             300  2
+  2  Image  B              30  2
+  3  Image  V              20  2
+  4  Image  I              10  2
+  2  Image  B              30  2
+  3  Image  V              20  2
+  4  Image  I              10  2
+  1  Bias   B               1  2
+  2  Image  B              30  2
+  3  Image  V              20  2
+  1  Image  V             300  2
+  4  Image  I              10  2
+  2  Image  B              30  2
+  3  Image  V              20  2
+  4  Image  I              10  2
+  1  Bias   B               1  2
+  2  Image  B              30  2
+  3  Image  V              20  2
+  4  Image  I              10  2
+  2  Image  B              30  2
+  3  Image  V              20  2
+  1  Image  I             200  2
+  4  Image  I              10  2
+
+% M36 = NGC1960 (good seeing)
+  2  Image  B              50  2
+  7  Image  V              30  2
+  2  Image  I              30  2
+  2  Image  B              50  2
+  7  Image  V              30  2
+  2  Image  I              30  2
+  1  Bias   I               1  2
+
+% M36 = NGC1960
+  1  Image  B             100  2
+  4  Image  V              60  2
+  1  Image  I              60  2
+  1  Image  B             100  2
+  4  Image  V              60  2
+  1  Image  I              60  2
+  1  Bias   I               1  2
+
+% M3 [this is correct sequence! use it please]
+  5  Image  V             100  2
+  2  Image  I             100  2 
+  1  Bias   I               1  2
+
+% M53 [this is correct sequence! use it please]
+ 16  Image  V             100  2
+  1  Bias   I               1  2
+  7  Image  I             100  2
+  1  Bias   I               1  2
+
+% ASAS-13ax
+  2  Image  B             120  2
+  2  Image  V             120  2
+  2  Image  R             120  2
+  2  Image  I             120  2
+  1  Bias   I               1  2
+
+% Std98
+  1  Bias   B               1  2
+  1  Image  B              60  2
+  1  Image  V              60  2
+  1  Image  R              30  2
+  1  Image  I              30  2
+
+% AU Mon
+  2  Image  B              40  2
+  2  Image  V              30  2
+  2  Image  R              20  2
+  2  Image  I              10  2
+  1  Bias   I               1  2
+
+% AU Mon
+  2  Image  B              40  2
+  2  Image  V              20  2
+  2  Image  R              20  2
+  2  Image  I              20  2
+  1  Bias   I               1  2
+
+% AZ_Cas_1
+  1  Bias   B               1  2
+  1  Image  B              60  2
+  2  Image  V              20  2
+  3  Image  R              10  2
+  3  Image  I              10  2
+
+% AZ_Cas_2
+  1  Bias   B               1  2
+  1  Image  B              60  2
+  2  Image  V              20  2
+  3  Image  R              10  2
+  5  Image  I               5  2
+
+% CSS111103
+  1  Bias   I               1  2
+  2  Image  I             120  2
+  2  Image  B             120  2
+  2  Image  V             120  2
+  2  Image  R             120  2
+  1  Bias   R               1  2
+
+% V2367 Cyg
+  1  Image  B             100  2
+  1  Image  V             100  2
+  1  Image  I              60  2
+  1  Image  B             100  2
+  1  Image  V             100  2
+  1  Image  I              60  2
+  1  Bias   I               1  2
+
+% KIC8647299
+  1  Image  B             100  2
+  1  Image  V             100  2
+  1  Image  I             100  2
+  1  Image  B             100  2
+  1  Image  V             100  2
+  1  Image  I             100  2
+  1  Bias   I               1  2
+
+% KIC6721089
+  1  Image  B             100  2
+  1  Image  V             100  2
+  1  Image  I             100  2
+  1  Image  B             100  2
+  1  Image  V             100  2
+  1  Image  I             100  2
+  1  Bias   I               1  2
+
+% KIC9700322
+  1  Bias   B               1  2
+  1  Image  B             100  2
+  1  Image  V             100  2
+  1  Image  I             100  2
+  1  Image  B             100  2
+  1  Image  V             100  2
+  1  Image  I             100  2
+
+% KIC6861400  - autoguider
+  1  Bias   B               1  2
+  1  Image  B             200  2
+  1  Image  V             200  2
+  1  Image  I             200  2
+  1  Image  B             200  2
+  1  Image  V             200  2
+  1  Image  I             200  2
+
+% KIC6861400
+  1  Bias   B               1  2
+  1  Image  B             120  2
+  1  Image  V             100  2
+  1  Image  I             100  2
+  1  Image  B             120  2
+  1  Image  V             100  2
+  1  Image  I             100  2
+
+% KIC11754974
+  1  Image  B             100  2
+  1  Image  V             100  2
+  1  Image  I             100  2
+  1  Image  B             100  2
+  1  Image  V             100  2
+  1  Image  I             100  2
+  1  Bias   I               1  2
+
+% KIC5950759,  HADS #1
+  1  Image  B             120  2
+  1  Image  V             100  2
+  1  Image  I             100  2
+  1  Image  B             120  2
+  1  Image  V             100  2
+  1  Image  I             100  2
+  1  Bias   I               1  2 
+
+% KIC2857323
+  1  Image  B             100  2
+  1  Image  V             100  2
+  1  Image  I             100  2
+  1  Image  B             100  2
+  1  Image  V             100  2
+  1  Image  I             100  2
+  1  Bias   I               1  2
+
+% KIC6382916
+  1  Image  B             100  2
+  1  Image  V              60  2
+  1  Image  I              60  2
+  1  Image  B             100  2
+  1  Image  V              60  2
+  1  Image  I              60  2
+  1  Bias   I               1  2
+
+% KIC8410637
+  1  Image  B             120  2
+  1  Image  V             100  2
+  1  Image  R              60  2
+  1  Image  I              40  2 
+  1  Bias   I               1  2
+
+% KIC8410637
+  1  Image  B             120  2
+  1  Image  V             100  2
+  1  Image  R              60  2
+  1  Image  I              40  2 
+  1  Bias   I               1  2
+
+% KIC3868420,  HADS #4
+  1  Image  B             100  2
+  1  Image  V              60  2
+  1  Image  I              60  2
+  1  Image  B             100  2
+  1  Image  V              60  2
+  1  Image  I              60  2
+  1  Bias   I               1  2
+
+% GALEX faint (V > 12.5)
+  1  Image  B             100  2
+  6  Image  V              60  2
+  1  Image  I              60  2
+  1  Bias   I               1  2
+
+% GALEX faint (V > 12.5)
+  1  Image  B             100  2
+  6  Image  V             100  2
+  1  Image  I             100  2
+  1  Bias   I               1  2
+
+% GALEX bright (V < 12.5)
+  1  Image  B              60  2
+ 12  Image  V              30  2
+  1  Image  I              30  2
+  1  Bias   I               1  2
+
+% GALEX
+ 20  Image  V              30  2
+  1  Image  R              60  2
+  1  Image  I              60  2
+  1  Bias   I               1  2
+ 20  Image  V              30  2
+  1  Image  B             100  2
+  1  Bias   B               1  2
+
+% GALEX_J1632+8513
+  1  Image  B              30  2
+ 20  Image  V              30  2
+  1  Image  I              30  2
+  1  Bias   I               1  2
+
+% GALEX J1717
+  1  Image  B             100  2
+  4  Image  V             100  2
+  2  Image  I              60  2
+  1  Bias   I               1  2
+
+% SN2013dr
+  1  Bias   B               1  2
+  1  Image  B             100  2
+  1  Image  V             100  2
+  1  Image  R             100  2
+  1  Image  I             100  2
+
+% SN2014J
+  1  Bias   B               1  2
+  1  Image  B             200  2
+  1  Image  V             200  2
+  1  Image  R             200  2
+  1  Image  I             200  2
+  1  Bias   I               1  2
+  1  Image  Ha wide       150  16
+  1  Image  Ha narrow     300  16
+  1  Image  Ha wide       150  16
+  1  Image  Ha wide        30  16
+  1  Image  Ha narrow      60  16
+  1  Image  Ha wide        30  16
+  1  Bias   Ha wide         1  2
+
+% SN2014J
+  1  Bias   Ha wide         1  2
+  1  Image  Ha wide       120  2
+  1  Image  Ha narrow     300  2
+  1  Image  Ha wide       120  2
+  1  Bias   Ha wide         1  2
+  1  Image  Ha wide        30  2
+  1  Image  Ha narrow      60  2
+  1  Image  Ha wide        30  2
+  1  Bias   B               1  2
+  1  Image  B             200  2
+  1  Image  V             200  2
+  1  Image  R             200  2
+  1  Image  I             200  2
+  1  Bias   I               1  2
+
+% ASASSN13dl
+  1  Image  B             150  2
+  1  Image  V             120  2
+  1  Image  R             120  2
+  1  Image  I             120  2
+  1  Bias   I               1  2
+
+% ASASSN13ck
+  1  Image  B             100  2
+  1  Image  V             100  2
+  1  Image  R             100  2
+  1  Image  I             100  2
+  1  Bias   I               1  2
+
+% supernovae
+  1  Bias   B               1  2
+  3  Image  B             120  2
+  3  Image  V             120  2
+  3  Image  R             120  2
+  3  Image  I             120  2
+  1  Bias   I               1  2
+
+% Balloon 090100001
+ 30  Image  B              30  2
+  1  Bias   B               1  2
+
+% QSOB1215
+  1  Bias   B             150  2
+  2  Image  B             150  2
+  2  Image  V             150  2
+  2  Image  R             150  2
+  2  Image  I             150  2
+  1  Image  Ha wide       120  2
+  1  Image  Ha narrow     200  2
+  1  Image  Ha wide       120  2 
+
+% Darki 3000
+  1  Bias   B               1 16  
+  1  Dark   B            3000 16
+  1  Bias   B               1 16  
+  1  Dark   B            3000 16
+  1  Bias   B               1 16  
+  1  Dark   B            3000 16
+  1  Dark   B            3000 16
+  1  Bias   B               1 16  
+  1  Dark   B            3000 16
+  1  Bias   B               1 16
+
+% Darki do FF
+  8  Dark   B              15  2
+  8  Dark   B              30  2
+
+% Darki 600
+  1  Bias   B               1  2 
+  1  Dark   B             600  2
+  1  Bias   B               1  2  
+  1  Dark   B             600  2
+  1  Bias   B               1  2  
+  1  Dark   B             600  2
+  1  Bias   B               1  2  
+  1  Dark   B             600  2 
+  1  Bias   B               1  2  
+  1  Dark   B             600  2
+  1  Bias   B               1  2
+  1  Dark   B             600  2
+  1  Bias   B               1  2  
+  1  Dark   B             600  2
+  1  Bias   B               1  2  
+  1  Dark   B             600  2
+  1  Bias   B               1  2  
+  1  Dark   B             600  2
+  1  Bias   B               1  2  
+  1  Dark   B             600  2
+  1  Bias   B               1  2
+  1  Dark   B             600  2
+  1  Bias   B               1  2  
+  1  Dark   B             600  2
+  1  Bias   B               1  2  
+  1  Dark   B             600  2
+  1  Bias   B               1  2  
+  1  Dark   B             600  2
+  1  Bias   B               1  2  
+  1  Dark   B             600  2
+  1  Bias   B               1  2
+  1  Dark   B             600  2
+  1  Bias   B               1  2  
+  1  Dark   B             600  2
+  1  Bias   B               1  2 
+  1  Dark   B             600  2
+  1  Bias   B               1  2  
+  1  Dark   B             600  2
+  1  Bias   B               1  2  
+  1  Dark   B             600  2
+  1  Bias   B               1  2
+
+% die Dunkelsequenz
+  8  Dark   V              60  2
+  8  Dark   V              40  2
+
+% linearity test on NGC6910
+  1  Bias   V               1  2
+  1  Image  V             100  2
+  1  Image  V              80  2
+  1  Image  V              60  2
+  1  Image  V              40  2
+  1  Image  V              20  2
+  1  Image  V              40  2
+  1  Image  V              60  2
+  1  Image  V              80  2
+  1  Image  V             100  2
+  1  Image  V             120  2
+  1  Bias   V               1  2
+
+% Testy liniowosci V
+  1  Bias   V               1  2
+  1  Image  V              10  2
+  1  Image  V              20  2
+  1  Image  V              10  2
+  1  Image  V              30  2
+  1  Bias   V               1  2
+  1  Image  V              10  2
+  1  Image  V              50  2
+  1  Image  V              10  2
+  1  Image  V              80  2
+  1  Bias   V               1  2
+  1  Image  V              10  2
+  1  Image  V             120  2
+  1  Image  V              10  2
+  1  Bias   V               1  2
+  1  Image  V             150  2
+  1  Image  V              10  2
+  1  Bias   V               1  2
+  1  Image  V              10  2
+  1  Bias   V               1  2
+  1  Image  V             120  2
+  1  Image  V              10  2
+  1  Bias   V               1  2
+  1  Image  V              70  2
+  1  Image  V              10  2
+  1  Image  V              40  2
+  1  Bias   V               1  2
+  1  Image  V              30  2
+  1  Bias   V               1  2
+  1  Image  V              10  2
+  1  Bias   V               1  2
+  1  Image  V              25  2
+  1  Image  V              10  2
+  1  Bias   V               1  2
+  1  Image  V             180  2
+  2  Image  V              10  2
+  1  Bias   V               1  2
+  1  Image  V             150  2
+  1  Image  V              10  2
+  1  Bias   V               1  2
+  1  Image  V             120  2
+  2  Image  V              10  2
+  1  Bias   V               1  2
+  1  Image  V             100  2
+  1  Image  V              10  2
+  1  Image  V              80  2
+  1  Image  V              10  2
+  1  Bias   V               1  2
+  1  Image  V              60  2
+  1  Image  V              10  2
+  1  Bias   V               1  2
+  1  Image  V              50  2
+  1  Bias   V               1  2
+  1  Image  V              40  2
+  1  Bias   V               1  2
+  1  Image  V              10  2
+  1  Bias   V               1  2
+  1  Image  V              30  2
+  2  Image  V              10  2
+  1  Bias   V               1  2
+
+% Testy liniowosci R
+  1  Bias   R               1  2
+  1  Image  R              10  2
+  1  Image  R              20  2
+  1  Image  R              10  2
+  1  Image  R              30  2
+  1  Bias   R               1  2
+  1  Image  R              10  2
+  1  Image  R              50  2
+  1  Image  R              10  2
+  1  Image  R              80  2
+  1  Bias   R               1  2
+  1  Image  R              10  2
+  1  Image  R             100  2
+  1  Image  R              10  2
+  1  Bias   R               1  2
+  1  Image  R             150  2
+  1  Image  R              10  2
+  1  Bias   R               1  2
+  1  Image  R             240  2
+  1  Image  R              10  2
+  1  Bias   R               1  2
+  1  Image  R             120  2
+  1  Image  R              10  2
+  1  Bias   R               1  2
+  1  Image  R              70  2
+  1  Image  R              10  2
+  1  Image  R              40  2
+  1  Bias   R               1  2
+  1  Image  R              10  2
+  1  Bias   R               1  2
+  1  Image  R              25  2
+  1  Image  R              10  2
+  1  Bias   R               1  2
+
+% Stock8 + very short I
+  1  Bias   B               1  16
+  3  Image  B             120  16
+  3  Image  V              90  16
+  3  Image  R              60  16
+  3  Image  I              60  16
+  6  Image  I              10  16
+  
+% Stock8 double
+  1  Bias   B               1  16
+  1  Image  B             100  16
+  2  Image  B              20  16
+  1  Image  V              60  16
+  3  Image  V              15  16
+  1  Image  R              40  16
+  4  Image  R              10  16
+  1  Image  I              30  16
+ 10  Image  I              10  16
+
+% Gaia16aye(V+I)
+  1  Bias   V               1   16
+  2  Image  V             100   16
+  2  Image  I             100   16
+
+% EI_Cep (from 40 deg to 55 deg)
+  1  Bias   B               1  16
+  3  Image  B              20  16
+  3  Image  V              15  16
+  3  Image  R              10  16
+  3  Image  I              10  16
+
+% FK_Dra
+  1  Bias   B               1  16
+  3  Image  B              50  16
+  3  Image  V              30  16
+  3  Image  R              30  16
+  3  Image  I              30  16
+
+% FL_Lyr
+  1  Bias   B               1  16
+  3  Image  B              50  16
+  3  Image  V              30  16
+  3  Image  R              20  16
+  3  Image  I              20  16
+
+% FL_Lyr (over 60 deg)
+  1  Bias   B               1  16
+  3  Image  B              30  16
+  3  Image  V              20  16
+  3  Image  R              10  16
+  3  Image  I              10  16
+
+% Typical Gaia Alerts
+  1  Bias   B               1  16
+  3  Image  B             120  16
+  3  Image  V             120  16
+  3  Image  R             100  16
+  3  Image  I             100  16
+
+% Darks for FF (10,15,20)
+  1  Bias   I               1   2
+  8  Dark   I              10   2
+  1  Bias   I               1   2
+  8  Dark   I              15   2
+  1  Bias   I               1   2
+  8  Dark   I              20   2
+  1  Bias   I               1   2
+
+% NGC6823_good_seeing
+  1  Bias   V               1  16
+  1  Image  V             120  16
+  2  Image  R              90  16
+  2  Image  I              90  16
+
+% TX_Her - good seeing
+  1  Bias   B               1  16
+  3  Image  B              15  16
+  3  Image  V              10  16
+  3  Image  R              10  16
+  3  Image  I              10  16
+
+% KIC8462852
+  1  Bias   B               1  16
+  3  Image  B              90  16
+  3  Image  V              60  16
+  3  Image  R              40  16
+  3  Image  I              40  16
+
+% NGC637_16
+  1  Bias   B               1   16
+  2  Image  B             100   16
+  3  Image  V              80   16
+  2  Image  I              60   16
+
+% DARK (for FF)
+  1  Bias   B               1   2
+  8  Dark   B              35   2
+  1  Bias   B               1   2
+  8  Dark   B              30   2
+  1  Bias   B               1   2
+  8  Dark   B              22   2
+  1  Bias   B               1   2
+  8  Dark   B              12   2
+
+% WASP-33b_2
+  1  Bias   R               1  16
+ 40  Image  R               7  16
+
+% Darki_FF_mo2
+  1  Bias   B               1   2
+  8  Dark   B              30   2
+  1  Bias   B               1   2
+  8  Dark   B              15   2
+  1  Bias   B               1   2
+  8  Dark   B              10   2
+
+% Darki_FF_mo
+  1  Bias   B               1   2
+  8  Dark   B              15   2
+  1  Bias   B               1   2
+  8  Dark   B              10   2
+
+% IC348
+  2  Image  B             100   16
+  2  Image  V             100   16
+  2  Image  V              30   16
+  1  Bias   R               1   16
+  2  Image  R             100   16
+  2  Image  I             100   16
+  2  Image  I              30   16
+  1  Bias   I               1   16
+
+% Bias-test
+  5  Bias   B               1  2
+  5  Bias   B               1 16
+
+% KIC10661783
+  1  Bias   B               1  2
+  2  Image  B              20  2
+  2  Image  V              15  2
+  2  Image  R              15  2
+  2  Image  I              15  2
+  2  Image  B              20  2
+  2  Image  V              15  2
+  2  Image  R              15  2
+  2  Image  I              15  2
+
+% KIC10661783-2
+  1  Bias   B               1   2
+  2  Image  B              30   2
+  2  Image  V              20   2
+  2  Image  R              20   2
+  2  Image  I              20   2
+  2  Image  B              30   2
+  2  Image  V              20   2
+  2  Image  R              20   2
+  2  Image  I              20   2
+
+% KIC10661783-3
+  1  Bias   B               1   2
+  2  Image  B              60   2
+  2  Image  V              40   2
+  2  Image  R              30   2
+  2  Image  I              30   2
+
+% KIC10661783 - short
+  1  Bias   B               1   2
+  2  Image  B              30   2
+  2  Image  V              20   2
+  2  Image  R              10   2
+  2  Image  I              10   2
+  2  Image  B              30   2
+  2  Image  V              20   2
+  2  Image  R              10   2
+  2  Image  I              10   2
+
+% CCDOBS-TEST
+  1  Bias   B               1   2
+  2  Dark   B              30   2
+  2  Dark   V              20   2
+  2  Dark   R              10   2
+  2  Dark   I              10   2
+  2  Dark   B              30   2
+  2  Dark   V              20   2
+  2  Dark   R              10   2
+  2  Dark   I              10   2
+  1  Bias   Ha narrow       1   2
+  2  Dark   I              30   2
+  2  Dark   None           20   2
+  2  Dark   Ha wide        10   2
+  2  Dark   B              10   2
+  2  Dark   R              30   2
+  2  Dark   Empty          20   2
+  2  Dark   V              10   2
+  2  Dark   I              10   2
+
+% CCDOBS-TEST
+  1  Bias   B               1   2
+  2  Dark   B              30   2
+  2  Dark   V              20   2
+  2  Dark   R              10   2
+  2  Dark   I              10   2
+  2  Dark   B              30   2
+  2  Dark   V              20   2
+  2  Dark   R              10   2
+  2  Dark   I              10   2
+  1  Bias   Ha narrow       1   2
+  2  Dark   I              30   2
+  2  Dark   Ha wide        10   2
+  2  Dark   B              10   2
+  2  Dark   R              30   2
+  2  Dark   V              10   2
+  2  Dark   I              10   2
+
+
+% zzz3
+  1  Image  B             100   2
+  4  Image  V             100   2
+  2  Image  I              60   2
+  1  Bias   I               1   2
+
+
+
