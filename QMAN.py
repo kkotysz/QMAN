@@ -5,11 +5,11 @@
 
 import sys
 import numpy as np
-import matplotlib.pyplot as plt
+# import matplotlib.pyplot as plt
 import itertools as it
 import datetime
-import tkinter as tk
-import tkinter.font
+import Tkinter as Tk
+import tkFont
 import os
 import fileinput
 from colorama import Fore, init, Style
@@ -27,10 +27,10 @@ class ccdobs_Object:
         ccdobs_Object.objCount += 1
     
     def displayCount(self):
-        print("Total Objects %d" % ccdobs_Object.objCount)
+        print "Total Objects %d" % ccdobs_Object.objCount
         return
     def displayObject(self):
-        print("Name : ", self.name,  "\nExposure Times: ", self.exp_t)
+        print "Name : ", self.name,  "\nExposure Times: ", self.exp_t
         return
     def countQTime(self):
         total_exp_t = [a*b for a,b in zip(self.n_exp,self.exp_t)]
@@ -43,12 +43,15 @@ class ccdobs_Object:
         return obj_str2
         
 def create_curr_obj(current_queue):
+    current_queue = filter(len, current_queue)
     ne = [int(current_queue[i].split()[0]) for i in range(len(current_queue))]
-    fi = [str(current_queue[i].split()[1]) for i in range(len(current_queue))]
-    it = [str(current_queue[i].split()[2]) for i in range(len(current_queue))]
-    et = [int(current_queue[i].split()[3]) for i in range(len(current_queue))]
+    it = [str(current_queue[i].split()[1]) for i in range(len(current_queue))]
+    fi = [str(current_queue[i].split()[2]) for i in range(len(current_queue))]
+    et = [float(current_queue[i].split()[3]) for i in range(len(current_queue))]
     rt = [int(current_queue[i].split()[4]) for i in range(len(current_queue))]
-    return ccdobs_Object('0_CURRENT_QUEUE',ne,fi,it,et,rt)    
+
+
+    return ccdobs_Object('0_CURRENT_QUEUE',ne,it,fi,et,rt)    
 
 def immediately(event):
     global value
@@ -56,26 +59,26 @@ def immediately(event):
     try:
         index = int(w.curselection()[0])
         value = w.get(index)
-        Tb1.delete(1.0, tk.END)
-        Tb2.config(state=tk.NORMAL)
-        Tb2.delete(1.0, tk.END)
+        Tb1.delete(1.0, Tk.END)
+        Tb2.config(state=Tk.NORMAL)
+        Tb2.delete(1.0, Tk.END)
         try:
-            Tb1.insert(tk.INSERT, objects[value].textQueue())
-            Tb2.insert(tk.INSERT, '{:<8.2f}sec\n'.format(objects[value].countQTime()))
+            Tb1.insert(Tk.INSERT, objects[value].textQueue())
+            Tb2.insert(Tk.INSERT, '{:<8.2f}sec\n'.format(objects[value].countQTime()))
             h,m,s = str(datetime.timedelta(seconds=objects[value].countQTime())).split(':')
         except KeyError:
             if value == '0_CURRENT_QUEUE':
-                Tb1.insert(tk.INSERT, curr_obj.textQueue())
-                Tb2.insert(tk.INSERT, '{:<8.2f}sec\n'.format(curr_obj.countQTime()))
+                Tb1.insert(Tk.INSERT, curr_obj.textQueue())
+                Tb2.insert(Tk.INSERT, '{:<8.2f}sec\n'.format(curr_obj.countQTime()))
                 h,m,s = str(datetime.timedelta(seconds=curr_obj.countQTime())).split(':')
-        Tb2.insert(tk.INSERT, '{:02d}h {:02d}m {:2.2f}s'.format(int(h),int(m),float(s)))
-        Tb2.config(state=tk.DISABLED)
+        Tb2.insert(Tk.INSERT, '{:02d}h {:02d}m {:2.2f}s'.format(int(h),int(m),float(s)))
+        Tb2.config(state=Tk.DISABLED)
     except IndexError:
         pass
 
 def edit_oname():
     new_name = str(obj_name.get())
-    if new_name not in list(objects.keys()) and new_name != '0_CURRENT_QUEUE':
+    if new_name not in objects.keys() and new_name != '0_CURRENT_QUEUE':
         try:
             objects[value].name = new_name
             objects[new_name] = objects.pop(value)
@@ -92,12 +95,12 @@ def edit_oname():
             os.rename("ccdobs_temp.txt", ccdobs)
             sort_list()
         except KeyError:
-            print("#ERROR: OPERATION NOT ALLOWED")
+            print "#ERROR: OPERATION NOT ALLOWED"
     else:
-        print("#ERROR: NAME ALREADY TAKEN")
+        print "#ERROR: NAME ALREADY TAKEN"
 def set_queue():
     global curr_obj
-    new_queue = Tb1.get('1.0',tk.END)
+    new_queue = Tb1.get('1.0',Tk.END)
     new_queue2 = new_queue.replace('Han      ', 'Ha narrow')
     new_queue2 = new_queue2.replace('Haw    ', 'Ha wide')
              
@@ -111,7 +114,7 @@ def set_queue():
     nfirstlines = []
     
     with open(ccdobs) as f, open("ccdobs_temp.txt", "w") as out:
-        for x in range(line_n):
+        for x in xrange(line_n):
             nfirstlines.append(next(f))
         for line in f:
             if 'Han' in line:
@@ -128,26 +131,26 @@ def set_queue():
         f.seek(0, 0)
         f.write(new_queue2.rstrip('\r\n') + '\n\n' + content)
     
-    Tb2.config(state=tk.NORMAL)
-    Tb2.delete(1.0, tk.END)
+    Tb2.config(state=Tk.NORMAL)
+    Tb2.delete(1.0, Tk.END)
     curr_obj = create_curr_obj(new_queue.strip().splitlines())
-    Tb2.insert(tk.INSERT, '{:<8.2f}sec\n'.format(curr_obj.countQTime()))
+    Tb2.insert(Tk.INSERT, '{:<8.2f}sec\n'.format(curr_obj.countQTime()))
     h,m,s = str(datetime.timedelta(seconds=curr_obj.countQTime())).split(':')
-    Tb2.insert(tk.INSERT, '{:02d}h {:02d}m {:2.2f}s'.format(int(h),int(m),float(s)))
-    Tb2.config(state=tk.DISABLED)
+    Tb2.insert(Tk.INSERT, '{:02d}h {:02d}m {:2.2f}s'.format(int(h),int(m),float(s)))
+    Tb2.config(state=Tk.DISABLED)
     
 def sort_list():
-    Lb1.delete(0,tk.END)
-    for item in list(objects.keys()):
-        Lb1.insert(tk.END, item)
-    Lb1.insert(tk.END, curr_obj.name)
-    temp_list = list(Lb1.get(0, tk.END))
+    Lb1.delete(0,Tk.END)
+    for item in objects.keys():
+        Lb1.insert(Tk.END, item)
+    Lb1.insert(Tk.END, curr_obj.name)
+    temp_list = list(Lb1.get(0, Tk.END))
     temp_list.sort(key=str.lower)
     # delete contents of present listbox
-    Lb1.delete(0, tk.END)
+    Lb1.delete(0, Tk.END)
     # load listbox with sorted data
     for item in temp_list:
-        Lb1.insert(tk.END, item)
+        Lb1.insert(Tk.END, item)
     Lb1.itemconfig(0, background='red', foreground='yellow')
     
 def open_queue():
@@ -156,41 +159,39 @@ def open_queue():
         with open(ccdobs) as f:
             contents = f.read()
             for entry in contents.split('%')[:1]:
-                if 'Ha wide':
-                    if 'Ha narrow' in entry:
-                        entry=entry.replace('Ha wide','Haw')
-                        entry=entry.replace('Ha narrow','Han')
+                # print entry
+                if 'Ha wide' or 'Ha narrow' in entry:
+                    entry=entry.replace('Ha wide','Haw')
+                    entry=entry.replace('Ha narrow','Han')
                 current_queue = entry.strip().splitlines()
             for entry in contents.split('%')[1:]:
-                if 'Ha wide':
-                    if 'Ha narrow' in entry:
-                        entry=entry.replace('Ha wide','Haw')
-                        entry=entry.replace('Ha narrow','Han')
+                if 'Ha wide' or 'Ha narrow' in entry:
+                    entry=entry.replace('Ha wide','Haw')
+                    entry=entry.replace('Ha narrow','Han')
                 queue.append(entry.strip().splitlines())
     except IOError:
-        print(" # ERROR! Problem loading data from '" + ccdobs + "'!")
+        print " # ERROR! Problem loading data from '" + ccdobs + "'!"
         sys.exit(1)
         
     curr_obj = create_curr_obj(current_queue)
-    
     for q in queue:
         ne = [int(q[1:][i].split()[0]) for i in range(len(q[1:]))]
-        fi = [str(q[1:][i].split()[1]) for i in range(len(q[1:]))]
-        it = [str(q[1:][i].split()[2]) for i in range(len(q[1:]))]
-        et = [int(q[1:][i].split()[3]) for i in range(len(q[1:]))]
+        it = [str(q[1:][i].split()[1]) for i in range(len(q[1:]))]
+        fi = [str(q[1:][i].split()[2]) for i in range(len(q[1:]))]
+        et = [float(q[1:][i].split()[3]) for i in range(len(q[1:]))]
         rt = [int(q[1:][i].split()[4]) for i in range(len(q[1:]))]
-        objects[q[0]] = ccdobs_Object(q[0],ne,fi,it,et,rt)
+        objects[q[0]] = ccdobs_Object(q[0],ne,it,fi,et,rt)
     
-    print("Queue time:")
-    print('{:<8.2f}sec'.format(curr_obj.countQTime()))
+    print "Queue time:"
+    print '{:<8.2f}sec'.format(curr_obj.countQTime())
     h,m,s = str(datetime.timedelta(seconds=curr_obj.countQTime())).split(':')
-    print('{:02d}h {:02d}m {:2.2f}s'.format(int(h),int(m),float(s)))
+    print '{:02d}h {:02d}m {:2.2f}s'.format(int(h),int(m),float(s))
 def delete_object():
     lookup = '% '+value
     
     try:
         objects.pop(value)
-        new_queue = Tb1.get('1.0',tk.END)
+        new_queue = Tb1.get('1.0',Tk.END)
         
         line_n = []
         with open(ccdobs) as f:
@@ -213,7 +214,7 @@ def delete_object():
                 if num == line_n[0]:
                     break
             if len(line_n) == 2:
-                for x in range(abs(line_n[0]-line_n[1])):
+                for x in xrange(abs(line_n[0]-line_n[1])):
                     nfirstlines.append(next(f))
                 for line in f:
                     out.write(line)
@@ -223,14 +224,14 @@ def delete_object():
         sort_list()
         objc.set("Total number of objects: "+str(len(objects)))
     except KeyError:
-        print("#ERROR: OPERATION NOT ALLOWED")
+        print "#ERROR: OPERATION NOT ALLOWED"
     root.update_idletasks()
     
 def add_new():
     new_name = str(add_name.get())
     lookup = '% '+new_name
-    if new_name not in list(objects.keys()) and new_name != '0_CURRENT_QUEUE':
-        new_queue = Tb1.get('1.0',tk.END)
+    if new_name not in objects.keys() and new_name != '0_CURRENT_QUEUE':
+        new_queue = Tb1.get('1.0',Tk.END)
         new_queue2 = new_queue.replace('Han      ', 'Ha narrow')
         new_queue2 = new_queue2.replace('Haw    ', 'Ha wide')
         with open(ccdobs, 'r+') as f:
@@ -239,17 +240,17 @@ def add_new():
             f.write('\n% '+new_name+'\n')
             f.write(new_queue2.rstrip('\r\n') + '\n')
         objects[new_name] = create_curr_obj(new_queue.strip().splitlines())
-        Tb2.config(state=tk.NORMAL)
-        Tb2.delete(1.0, tk.END)
-        Tb2.insert(tk.INSERT, '{:<8.2f}sec\n'.format(objects[new_name].countQTime()))
+        Tb2.config(state=Tk.NORMAL)
+        Tb2.delete(1.0, Tk.END)
+        Tb2.insert(Tk.INSERT, '{:<8.2f}sec\n'.format(objects[new_name].countQTime()))
         h,m,s = str(datetime.timedelta(seconds=objects[new_name].countQTime())).split(':')
-        Tb2.insert(tk.INSERT, '{:02d}h {:02d}m {:2.2f}s'.format(int(h),int(m),float(s)))
-        Tb2.config(state=tk.DISABLED)
+        Tb2.insert(Tk.INSERT, '{:02d}h {:02d}m {:2.2f}s'.format(int(h),int(m),float(s)))
+        Tb2.config(state=Tk.DISABLED)
         sort_list()
         objc.set("Total number of objects: "+str(len(objects)))
         root.update_idletasks()
     else:
-        print("#ERROR: OBJECT ALREADY EXISTS")
+        print "#ERROR: OBJECT ALREADY EXISTS"
         
 def create_color_scheme(c1,c2,c3,c4,bw,btbw):
     bg = c1     #1
@@ -274,14 +275,14 @@ def create_color_scheme(c1,c2,c3,c4,bw,btbw):
 if __name__ == "__main__":          
     if len(sys.argv) < 2 or len(sys.argv) > 5:
         init(autoreset=True)
-        print(Fore.RED+Style.BRIGHT+"\n 'QMAN.py'\n                                                                                    ")
-        print(Fore.RED+Style.BRIGHT+" Q"+Style.RESET_ALL+"ueue ", Fore.RED+Style.BRIGHT+"MAN"+Style.RESET_ALL+"ager for CCDOBS program.")
-        print(" Usage: QMAN.py <ccdobs.lst> [<obj_name> -o] [<color_scheme>]\n                                                         ")
-        print(" Option '<obj_name> -o': count queue time for <obj_name> \n                                                             ")
-        print(" Option '<color_scheme>': if not specified -> default. Possible color options: \n                                       ")
-        print(" from cl1 to cl14  Example: QMAN.py ccdobs.lst cl12 \n                                                                ")
-        print(" Version of 29.03.2018 by K. Kotysz: k.kotysz(at)gmail.com")
-        print("                          P. Mikolajczyk(at)astro.uni.wroc.pl                                                           ")
+        print Fore.RED+Style.BRIGHT+"\n 'QMAN.py'\n                                                                                    "
+        print Fore.RED+Style.BRIGHT+" Q"+Style.RESET_ALL+"ueue ", Fore.RED+Style.BRIGHT+"MAN"+Style.RESET_ALL+"ager for CCDOBS program."
+        print " Usage: QMAN.py <ccdobs.lst> [<obj_name> -o] [<color_scheme>]\n                                                         "
+        print " Option '<obj_name> -o': count queue time for <obj_name> \n                                                             "
+        print " Option '<color_scheme>': if not specified -> default. Possible color options: \n                                       "
+        print " from cl1 to cl14  Example: QMAN.py ccdobs.lst cl12 \n                                                                "
+        print " Version of 29.03.2018 by K. Kotysz: k.kotysz(at)gmail.com"
+        print "                          P. Mikolajczyk(at)astro.uni.wroc.pl                                                           "
         sys.exit(1)
     
     n_px = 1252*1152
@@ -366,51 +367,51 @@ if __name__ == "__main__":
         open_queue()
         
         obj_name = sys.argv[2]
-        print("\nQueue time for",obj_name+":")
+        print "\nQueue time for",obj_name+":"
         try:
-            print('{:<8.2f}sec'.format(objects[obj_name].countQTime()))
+            print '{:<8.2f}sec'.format(objects[obj_name].countQTime())
             h,m,s = str(datetime.timedelta(seconds=objects[obj_name].countQTime())).split(':')
-            print('{:02d}h {:02d}m {:2.2f}s'.format(int(h),int(m),float(s)))
+            print '{:02d}h {:02d}m {:2.2f}s'.format(int(h),int(m),float(s))
         except KeyError:
-            print("# ERROR! Object name not in ccdobs.lst!")
+            print "# ERROR! Object name not in ccdobs.lst!"
     if '-o' not in sys.argv:
-        root = tk.Tk()
+        root = Tk.Tk()
         open_queue()
         root.title('QMAN.py (Queue MANager for CCDOBS program)')
         root.configure(background=bg)
         root.geometry('960x540')
-        obj_name = tk.StringVar()
-        add_name = tk.StringVar()
+        obj_name = Tk.StringVar()
+        add_name = Tk.StringVar()
         
-        Sb1 = tk.Scrollbar(root)
-        Sb2 = tk.Scrollbar(root)
+        Sb1 = Tk.Scrollbar(root)
+        Sb2 = Tk.Scrollbar(root)
         
-        Lb1 = tk.Listbox(root)
-        for item in list(objects.keys()):
-            Lb1.insert(tk.END, item)
-        Lb1.insert(tk.END, curr_obj.name)
+        Lb1 = Tk.Listbox(root)
+        for item in objects.keys():
+            Lb1.insert(Tk.END, item)
+        Lb1.insert(Tk.END, curr_obj.name)
         sort_list()
         Lb1.bind('<<ListboxSelect>>', immediately)
         
         
-        Tb1 = tk.Text(root)
-        Tb1.insert(tk.INSERT, curr_obj.textQueue())
+        Tb1 = Tk.Text(root)
+        Tb1.insert(Tk.INSERT, curr_obj.textQueue())
         
-        Tb2 = tk.Text(root)
-        Tb2.insert(tk.INSERT, '{:<8.2f}sec\n'.format(curr_obj.countQTime()))
+        Tb2 = Tk.Text(root)
+        Tb2.insert(Tk.INSERT, '{:<8.2f}sec\n'.format(curr_obj.countQTime()))
         h,m,s = str(datetime.timedelta(seconds=curr_obj.countQTime())).split(':')
-        Tb2.insert(tk.INSERT, '{:02d}h {:02d}m {:2.2f}s'.format(int(h),int(m),float(s)))
-        Tb2.config(state=tk.DISABLED)
+        Tb2.insert(Tk.INSERT, '{:02d}h {:02d}m {:2.2f}s'.format(int(h),int(m),float(s)))
+        Tb2.config(state=Tk.DISABLED)
         
-        Bt1 = tk.Button(root, text='SET QUEUE', command = set_queue)
-        Bt2 = tk.Button(root, text='CHANGE NAME', command = edit_oname)
-        Bt3 = tk.Button(root, text='DELETE', command = delete_object)
-        Bt4 = tk.Button(root, text='ADD NEW', command = add_new)
-        Et1 = tk.Entry(root, textvariable = obj_name)
-        Et2 = tk.Entry(root, textvariable = add_name)
-        objc = tk.StringVar()
+        Bt1 = Tk.Button(root, text='SET QUEUE', command = set_queue)
+        Bt2 = Tk.Button(root, text='CHANGE NAME', command = edit_oname)
+        Bt3 = Tk.Button(root, text='DELETE', command = delete_object)
+        Bt4 = Tk.Button(root, text='ADD NEW', command = add_new)
+        Et1 = Tk.Entry(root, textvariable = obj_name)
+        Et2 = Tk.Entry(root, textvariable = add_name)
+        objc = Tk.StringVar()
         objc.set("Total number of objects: "+str(len(objects)))
-        La1 = tk.Label(root, textvariable=objc)
+        La1 = Tk.Label(root, textvariable=objc)
         
         pdx = 3
         pdy = 3
@@ -427,7 +428,7 @@ if __name__ == "__main__":
         Et2.grid(row=3,  column=5,  columnspan=1,  rowspan=1, padx = pdx, pady = pdy, sticky = 'nsew')
         La1.grid(row=3,  column=3,  columnspan=2,  rowspan=1, padx = pdx, pady = pdy, sticky = 'nsew', ipady = 4)
         
-        Lb1.config(yscrollcommand=Sb1.set, font=font, bg=lbbg, fg=lbfg, selectbackground=lbabg, selectforeground=lbafg, activestyle=tk.NONE, width = 20, height = 28, borderwidth = 0, highlightthickness=0)
+        Lb1.config(yscrollcommand=Sb1.set, font=font, bg=lbbg, fg=lbfg, selectbackground=lbabg, selectforeground=lbafg, activestyle=Tk.NONE, width = 20, height = 28, borderwidth = 0, highlightthickness=0)
         Lb1.itemconfig(0, background = 'red', foreground='yellow')
         Sb1.config(command=Lb1.yview, bg=sbbg, troughcolor=sbfg)
         Sb2.config(command=Tb1.yview, bg=sbbg, troughcolor=sbfg)
@@ -441,9 +442,9 @@ if __name__ == "__main__":
         Et2.config(font=font, bg=etbg, fg=etfg, width = 15, insertbackground = etfg, borderwidth = 0, highlightbackground=hbg, highlightcolor=hbg, highlightthickness=1, selectbackground=btabg, selectforeground=btafg)
         La1.config(font=fontla, bg=etbg, fg=etfg, width = 25, height = 1, borderwidth = 0, highlightbackground=hbg, highlightthickness=1)
         for x, w in zip([0,2,3,4,5],[12,10,10,10,10]):
-            tk.Grid.columnconfigure(root, x, weight=w)
+            Tk.Grid.columnconfigure(root, x, weight=w)
         for y, w in zip([0,1,2,3],[10,1,2,1]):
-            tk.Grid.rowconfigure(root, y, weight=w)
+            Tk.Grid.rowconfigure(root, y, weight=w)
         root.mainloop()
         
 
