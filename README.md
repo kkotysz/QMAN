@@ -19,7 +19,7 @@ from colorama import Fore, init, Style
 
 ### (b) Fonts
 
-- **Everson** (included in the `QMAN.tar.gz` archive)
+- **Everson** (included in the `evermono.zip` archive)
 
 ## Usage
 
